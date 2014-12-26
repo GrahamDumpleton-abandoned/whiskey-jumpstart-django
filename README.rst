@@ -35,7 +35,8 @@ dashboard.
 1. Click `Deploy <https://heroku.com/deploy?template=https://github.com/GrahamDumpleton/whiskey-jumpstart-django>`_.
 2. Click the "View it" link after the app is deployed
 
-## Openshift
+OpenShift
+---------
 
 The OpenShift instructions assume you have already created an account at
 OpenShift (http://openshift.redhat.com) and are currently logged in to the
