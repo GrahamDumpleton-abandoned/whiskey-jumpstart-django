@@ -2,5 +2,5 @@
   "name": "Whiskey jumpstart example for Django",
   "description": "A template for getting started Django.",
   "website": "https://github.com/GrahamDumpleton/whiskey-jumpstart-django",
-  "success_url": "/",
+  "success_url": "/"
 }
