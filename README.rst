@@ -37,7 +37,7 @@ The Heroku instructions assume you have already created an account at
 Heroku (http://www.heroku.com) and are currently logged in to the Heroku
 dashboard.
 
-1. Click `Deploy (Python 3.4.1) <https://heroku.com/deploy?template=https://github.com/GrahamDumpleton/whiskey-jumpstart-django>`_.
+1. Click `Deploy (Python 3.4) <https://heroku.com/deploy?template=https://github.com/GrahamDumpleton/whiskey-jumpstart-django>`_.
 2. Click the "View it" link after the application been deployed.
 
 Note that for this deployment mechanism to work the target platform must
