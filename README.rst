@@ -6,7 +6,8 @@ This is a Whiskey jumpstart example for Django.
 
 It demonstrates how the same code based for a Django application can be
 deployed against Docker, Heroku and OpenShift. The example is running in
-all cases using using Apache/mod_wsgi, courtesy of ``mod_wsgi-express``.
+all cases using using Apache/mod_wsgi, courtesy of ``mod_wsgi-express``
+and the Whiskey build and deployment mechanism.
 
 To get it running follow the steps outlined below for each deployment type.
 
