@@ -48,7 +48,7 @@ The OpenShift instructions assume you have already created an account at
 OpenShift (http://openshift.redhat.com) and are currently logged in to the
 OpenShift dashboard.
  
-1. Click `Deploy (Python 2.7) <https://openshift.redhat.com/app/console/application_types/custom?name=whiskey-jumpstart-django&initial_git_url=https://github.com/GrahamDumpleton/whiskey-jumpstart-django.git&cartridges[]=python-2.7>`_.
+1. Click `Deploy (Python 2.7) <https://openshift.redhat.com/app/console/application_types/custom?name=whiskeyjumpstartdjango&initial_git_url=https://github.com/GrahamDumpleton/whiskey-jumpstart-django.git&cartridges[]=python-2.7>`_.
 2. Click the "Continue to application overview page" after the application
    has been deployed.
 3. Click on the name of your application to open it
