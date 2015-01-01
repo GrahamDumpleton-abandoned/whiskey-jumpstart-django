@@ -74,5 +74,34 @@ Just be patient and it will eventually return.
 3. Click on the name of your application to open it
 
 Note that at this time using the Python 3.3 runtime provided by OpenShift
-causes creation of the initial application to fail. This issue is still
-being investigated.
+causes creation of the initial application to fail using OpenShift's quick
+start mechanism. This is because their Python 3.3 runtime
+`will not work properly <https://github.com/openshift/origin-server/issues/6031>`_
+with deployments that want to use pip.
+
+To work around this you need to use the ``rhc`` command line to perform a
+manual deployment and set extra environment variables before trying to push
+this application code to OpenShift.
+
+To deploy manually use the following steps.
+
+1. Check out this repository.
+
+2. Create an OpenShift application using the ``python-2.7`` or ``python--3.3``
+   cartridges::
+
+    rhc app-create django python-3.3 --no-git
+
+3. Set environment variables to override where ``pip`` tries to create files,
+   thereby avoiding the bug in the OpenShift ``python-3.3`` cartridge::
+
+    rhc set-env -a django XDG_CACHE_HOME=/tmp/.cache XDG_CONFIG_DIRS=/tmp/.config
+
+4. Add the OpenShift git repository as a remote to the local repository,
+   using the actual git remote URI given::
+
+    git remote add openshift ssh://<app-id>@django-<account-name>.rhcloud.com/~/git/django.git/
+
+5. Force push the local repository up to the OpenShift repository::
+
+    git push -f openshift master
